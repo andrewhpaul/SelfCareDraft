@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Self Care</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_right_drawer">Right Drawer</string>
+
+    <string name="title_activity_driver_map">Map</string>
+    <string name="title_activity_customer_map">Map</string>
+    <string name="action_settings">Settings</string>
+    <array name="list">
+        <item>Date Not Set</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+
+    </array>
+</resources>

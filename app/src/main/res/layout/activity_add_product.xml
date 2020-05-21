@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".view.AddProductActivity"
+    android:fillViewport="true">
+
+    <!--Split up the optional and required with a heading, also change data types-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Information"
+            android:textColor="@color/blackColor"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:id="@+id/displayTxt"
+            />
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/personImage"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_addphoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:padding="2dp"
+            android:layout_below="@id/displayTxt"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productName"
+            android:inputType="textPersonName|textCapWords"
+            android:layout_below="@id/personImage"
+            android:hint="Enter your product name"
+            android:background="@drawable/background"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productPurchaseDate"
+            android:editable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            android:layout_below="@id/productName"
+            android:background="@drawable/background"
+            android:padding="10dp"
+            android:hint="Enter your product purchase date"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productExpiryDate"
+            android:inputType="date"
+            android:focusableInTouchMode="false"
+            android:editable="false"
+            android:layout_below="@id/productPurchaseDate"
+            android:background="@drawable/background"
+            android:padding="10dp"
+            android:hint="Enter your product expiry"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productURL"
+            android:inputType="text"
+            android:layout_below="@id/productExpiryDate"
+            android:background="@drawable/background"
+            android:padding="10dp"
+            android:hint="Enter your URL"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productPrice"
+            android:inputType="text"
+            android:layout_below="@id/productURL"
+            android:background="@drawable/background"
+            android:padding="10dp"
+            android:hint="Enter your Price"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productLocation"
+            android:inputType="text"
+            android:layout_below="@id/productPrice"
+            android:background="@drawable/background"
+            android:padding="10dp"
+            android:hint="Enter your product price"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productGroup"
+            android:inputType="textPersonName"
+            android:layout_below="@id/productPrice"
+            android:background="@drawable/background"
+            android:padding="10dp"
+            android:hint="Enter your group"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productTag"
+            android:inputType="textPersonName"
+            android:layout_below="@id/productGroup"
+            android:background="@drawable/background"
+            android:padding="10dp"
+            android:hint="Enter your product tag"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productNotes"
+            android:inputType="textPersonName"
+            android:layout_below="@id/productTag"
+            android:background="@drawable/background"
+            android:padding="10dp"
+            android:hint="Enter your notes"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productRatings"
+            android:inputType="textPersonName"
+            android:layout_below="@id/productNotes"
+            android:background="@drawable/background"
+            android:padding="10dp"
+            android:hint="Enter your rating (1 to 5)"
+            android:layout_marginTop="16dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/delete"
+                android:paddingHorizontal="10dp"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productRatings"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background"
+                android:text="Delete Info"
+                android:layout_marginHorizontal="12dp"
+                android:textColor="@color/blackColor"
+                android:textStyle="bold" />
+            <Button
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/addInfoBtn"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productRatings"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background"
+                android:text="Add Info"
+
+                android:textColor="@color/blackColor"
+                android:textStyle="bold" />
+            <Button
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/edit"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productRatings"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background"
+                android:text="Edit Info"
+                android:textColor="@color/blackColor"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

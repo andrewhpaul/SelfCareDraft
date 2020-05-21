@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ProductDetailsActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Product Details"
+            android:textColor="@android:color/white"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/pImageView"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_action_addphoto"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/exp"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:text="exp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:text="url"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="tags"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="tags"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="tags"
+        android:textSize="20dp" />
+
+
+
+
+
+</LinearLayout>
